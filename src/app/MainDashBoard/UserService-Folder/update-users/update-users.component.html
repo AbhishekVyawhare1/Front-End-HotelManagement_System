@@ -1,0 +1,30 @@
+<div class="container col-md-6">
+    <h1 style="color: yellow;">Update Form</h1>
+    <form class="container" (ngSubmit)="updateUserData()">
+
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Student Id</label>
+            <input type="email" class="form-control" id="userId" name="userId" [(ngModel)]="userserve.userId">
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">User Name</label>
+            <input type="email" class="form-control" id="name" name="name" [(ngModel)]="userserve.name">
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">User Email</label>
+            <input type="email" class="form-control" id="email" name="email" [(ngModel)]="userserve.email">
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">User ABOUT</label>
+            <input type="email" class="form-control" id="about" name="about" [(ngModel)]="userserve .about">
+        </div>
+
+        <diV>
+            <button type="submit" class="btn btn-primary">UPDATE USER</button>
+        </diV>
+    </form>
+
+</div>

@@ -1,0 +1,63 @@
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row" style="margin-top: 20px;">
+            <div class="col-md-6 offset-md-3">
+                <mat-card>
+                    <div class="container text-center">
+                        <img src="../../../assets/Logo1.jpg" alt="" style="max-width: 20%; height: auto;">
+                    </div>
+                    <!-- <h1 class="text-center">Register Here!!!!</h1> -->
+                    <h1 class="text-center" style="color: red;">Register Here!!!!</h1>
+
+
+                    <!-- {{user1 | json}} -->
+
+                    <form (ngSubmit)="formSubmit()">
+
+                        <!-- userID field -->
+                        <!-- <mat-form-field class="full-width" appearance="outline">
+                            <mat-label>UserID</mat-label>
+                            <input required [(ngModel)]="user1.id" name="id" type="id" required matInput
+                                placeholder="Enter Here" />
+                            <mat-hint>Valid User ID must be unique!!!!</mat-hint>
+                        </mat-form-field> -->
+
+                        <!-- userName field -->
+                        <mat-form-field class="full-width" appearance="outline">
+                            <mat-label>UserName</mat-label>
+                            <input required [(ngModel)]="user1.name" name="name" type="name" required matInput
+                                placeholder="Enter Here" />
+                            <mat-hint>Valid User Name</mat-hint>
+                        </mat-form-field>
+
+
+
+                        <!-- Email field -->
+                        <mat-form-field class="full-width" appearance="outline">
+                            <mat-label>Email</mat-label>
+                            <input required [(ngModel)]="user1.email" name="email" type="email" required matInput
+                                placeholder="Enter Here" />
+                            <mat-hint>Valid User email</mat-hint>
+                        </mat-form-field>
+
+
+                        <!-- Password Field -->
+                        <mat-form-field class="full-width" appearance="outline">
+                            <mat-label>User Password</mat-label>
+                            <input required [(ngModel)]="user1.password" name="password" type="password" required
+                                matInput placeholder="Enter Here" />
+                            <mat-hint>Valid User Password</mat-hint>
+                        </mat-form-field>
+
+
+
+                        <div class="container text-center">
+                            <button type="submit" mat-raised-button color="primary" style="margin-bottom: 20px;">REGISTER</button>
+                        </div>
+
+                    </form>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+<table class="table table-dark table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Hotel_id</th>
+        <th scope="col">Hotel_Name</th>
+        <th scope="col">Hotel_Location</th>
+        <th scope="col">Hotel_About</th>
+        <th scope="col"><b>Action</b></th>
+        <th scope="col"><b>Action</b></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let hotels of hotelservice2">
+        <th scope="row">{{hotels.hotelId}}</th>
+        <td>{{hotels.name}}</td>
+        <td>{{hotels.location}}</td>
+        <td>{{hotels.about}}</td>
+        <td>
+            <button (click)="updateHotel(hotels.hotelId)" class="btn btn-primary">Update</button>
+        </td>
+        <td>
+          <button (click)="deleteHotel(hotels.hotelId)" class="btn btn-info" style="margin-left: 10px;">delete</button>
+        </td>
+      </tr>
+    </table>

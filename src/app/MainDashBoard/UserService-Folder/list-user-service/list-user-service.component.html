@@ -1,0 +1,27 @@
+<table class="table table table-dark table-hover">
+    <thead>
+        <tr>
+            <th scope="col">User-userId</th>
+            <th scope="col">User-name</th>
+            <th scope="col">User-email</th>
+            <th scope="col">User-about</th>
+            <th scope="col">Actions</th>
+            <th scope="col">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let users2 of userservice2">
+            <th scope="row">{{users2.userId}}</th>
+            <td>{{users2.name}}</td>
+            <td>{{users2.email}}</td>
+            <td>{{users2.about}}</td>
+            <td>
+                <button (click)="updateUser(users2.userId)" class="btn btn-primary">Update</button>
+            </td>
+
+            <td>
+                <button (click)="deleteUser(users2.userId)" class="btn btn-info" style="margin-left: 10px;">delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,31 @@
+<div class="container col-md-3">
+    <h1 style="color: aqua;">Add Hotels</h1>
+    <form class="container" (ngSubmit)="addHotelData()">
+
+        <!-- <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Hotel Id</label>
+            <input type="email" class="form-control" id="hotelId" name="hotelId" [(ngModel)]="hotelservice2.hotelId">
+        </div> -->
+
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Hotel name</label>
+            <input type="email" class="form-control" id="name" name="name" [(ngModel)]="hotelservice2.name">
+        </div>
+
+        
+
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Hotel location</label>
+            <input type="email" class="form-control" id="location" name="location" [(ngModel)]="hotelservice2.location">
+          </div>
+
+
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Hotel about</label>
+            <input type="email" class="form-control" id="about" name="about" [(ngModel)]="hotelservice2.about">
+          </div>
+
+          <button type="submit" class="btn btn-primary">Register HOTEL</button>
+
+    </form>
+</div>

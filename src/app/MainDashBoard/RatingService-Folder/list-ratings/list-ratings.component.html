@@ -1,0 +1,28 @@
+<table class="table table table-dark table-striped-columns">
+    <thead>
+      <tr>
+        <th scope="col">Rating ID</th>
+        <th scope="col">User Id</th>
+        <th scope="col">Hotel Id</th>
+        <th scope="col">Rating</th>
+        <th scope="col">Feedback</th>
+        <th scope="col">Update</th>
+        <th scope="col">DELETE</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let ratings of ratingService2">
+        <th scope="row">{{ratings.ratingId}}</th>
+        <td>{{ratings.userId}}</td>
+        <td>{{ratings.hotelId}}</td>
+        <td>{{ratings.rating}}</td>
+        <td>{{ratings.feedback}}</td>
+        <td>
+            <button (click)="updateRATINGS(ratings.ratingId)" class="btb btn-primary">UPDATE</button>
+        </td>
+        <td>
+            <button (click)="deleteRatings(ratings.ratingId)" class="btn btn-info" style="margin-left: 10px;">delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>

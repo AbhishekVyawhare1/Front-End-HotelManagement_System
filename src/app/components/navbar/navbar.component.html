@@ -1,0 +1,54 @@
+<!-- 
+
+
+         <mat-toolbar color="accent">
+          <a routerLink="/" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+            <mat-icon>menu_book</mat-icon>
+          </a>
+          <span>HotelSystem</span>
+          <span class="example-spacer"></span>
+          
+        
+          <ng-container *ngIf="!login.isLoggedIn()">
+            <a [routerLink]="'/login'" mat-icon-button class="example-icon favorite-icon" aria-label="Login" style="margin-left: 10px;">
+              Login
+            </a>
+            <a [routerLink]="'/signup'" mat-icon-button class="example-icon favorite-icon ml20" aria-label="Register" style="margin-left: 10px;">
+              Register
+            </a>
+          </ng-container>
+          
+       
+          <a mat-icon-button (click)="logout()" *ngIf="login.isLoggedIn()" >Logout</a>
+        
+          <a mat-icon-button routerLink="/communication" >Get all</a>
+        </mat-toolbar>
+         -->
+
+         <mat-toolbar color="accent">
+          <a routerLink="/" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+            <mat-icon>menu_book</mat-icon>
+          </a>
+          <span>HotelSystem</span>
+          <span class="example-spacer"></span>
+        
+          <!-- Login and Register Links -->
+          <ng-container *ngIf="!login.isLoggedIn()">
+            <a [routerLink]="'/login'" mat-icon-button class="example-icon favorite-icon" aria-label="Login" style="margin-left: 10px;">
+              Login
+            </a>
+            <a [routerLink]="'/signup'" mat-icon-button class="example-icon favorite-icon ml20" aria-label="Register" style="margin-left: 10px;">
+              Register
+            </a>
+          </ng-container>
+        
+          <!-- Logout Link -->
+          <a mat-icon-button (click)="logout()" *ngIf="login.isLoggedIn()" >Logout</a>
+        
+          <!-- Add some margin to create space between Logout and Get all -->
+          <span style="margin-left: 69px;"></span>
+        
+          <a mat-icon-button routerLink="/communication" >GetAll</a>
+          <span style="margin-left: 60px;"></span>
+        </mat-toolbar>
+        
